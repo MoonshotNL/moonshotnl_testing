@@ -1,0 +1,3 @@
+Setup struct rlm_xxx_t to hold data that needs to be accessed by all instances of the rlm. This data is not necessarily the same for each instance. There is a separate copy for each instance. For example, this is the place to store configuration variables that will be provided in FreeRADIUS.conf.
+
+module_config is where the configuration variables from FreeRADIUS.conf are defined. There needs to be an entry here for each configuration variable. Do note there is a special entry for ending the list. That must be the last entry in this list. Each other entry has first a name for the configuration variable.

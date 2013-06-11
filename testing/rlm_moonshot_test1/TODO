@@ -1,0 +1,48 @@
+TODO:
+request_handler_preproxy.c:
+get_mime_certificate functie moet nog corresponderen met de mime module. Hierop moet nog gewacht worden omdat de mime module nog niet geheel af is.
+
+get_mime_message functie moet nog corresponderen met de mime module. Hierop moet ook gewacht worden totdat de mime module af is.
+
+get_mime_attributes moet nog worden geschreven bij de mime_module
+
+AVP_PROXY_REQUEST wordt nog niet meegestuurd aan de idp module
+
+x509_check.c:
+Lijst maken waarin elke CA wordt afgegaan totdat we de juiste hebben. handle_request nog niet af, komt doordat de mime module eerst af moet
+
+request_handler_preproxy.c:
+get_mime_attributes, functie bestaat nog niet
+AVP_PROXY_REQUEST, AVP wordt nergens aangemaakt
+
+idpmodule.c:
+line 323: ATTR_SMIME_REQUEST, waar wordt dit aangemaakt
+line 338: mime_unpack_attrrequest functie bestaat nog niet
+line 340 en 346: been error return
+line 345: get_matching_certificate, functie bestaat nog niet
+
+x509_mod.c:
+functie wordt niet gebruikt
+
+x509_check.c:
+functie wordt niet gebruikt
+Lijst maken waarin elke CA wordt afgegaan totdat we de juiste hebben.
+handle_request nog niet af, komt doordat de mime module eerst af moet
+handle_request functie wordt gebruikt
+
+proxymodule.c:
+functies worden nog niet gebruikt
+line 282: functienaam is al in gebruik
+line 268: handle_requests_idp juiste naam?
+line 275: functienaam dubbel
+line 289: mime_unpack_attrrequest functie bestaat niet
+line 296: get_matching_certificate functie bestaat niet
+line 302: create_output_request functie bestaat niet
+
+mod_smime.c:
+line 222: begint met een hoofdletter klopt dat
+worden certificaten al geladen?
+
+attribute_finder.c:
+line 187: request_value_by_attribute functie bestaat nog niet
+

@@ -1,0 +1,5 @@
+lib/valuepair.c:224 = VALUE_PAIR * pairfind(VALUE_PAIR *first, int attr) { if attr == VALUE_PAIR->attribute then return VALUE_PAIR else VALUE_PAIR = VALUE_PAIR->next and loop }
+include/libradius.h:156 = typedef struct value_pair { ... } VALUE_PAIR;
+include/libradius.h:220 = typedef struct radius_packet { ... } RADIUS_PACKET;
+include/radiusd.h:36 = typedef struct auth_req REQUEST;
+include/radiusd.h:194 = struct auth_req { ... };

@@ -1,0 +1,5 @@
+libtool: install: warning: relinking `rlm_moonshot.la'
+/usr/bin/ld: cannot find -lfreeradius-radius
+collect2: ld returned 1 exit status
+libtool: install: error: relink `rlm_moonshot.la' with the above command before installing it
+make: *** [install] Error 1
